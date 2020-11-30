@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  font-family: 'Kumbh Sans';
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #19a2ae; }
+
+p {
+  margin: 0; }
+
+.card-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+  line-height: 1;
+  overflow: hidden; }
+  .card-wrapper::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 978px;
+    height: 978px;
+    right: 52%;
+    bottom: 34%;
+    opacity: 0.5;
+    background: linear-gradient(45deg, rgba(9, 137, 180, 0) 34%, #53FFEE 100%); }
+    @media (max-width: 767px) {
+      .card-wrapper::before {
+        width: 700px;
+        height: 700px;
+        right: 44.267%;
+        bottom: 52.5%;
+        opacity: 0.25; } }
+  .card-wrapper::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 978px;
+    height: 978px;
+    left: 50%;
+    top: 50%;
+    opacity: 0.25;
+    background: linear-gradient(-45deg, rgba(9, 137, 180, 0) 34%, #53FFEE 100%); }
+    @media (max-width: 767px) {
+      .card-wrapper::after {
+        width: 700px;
+        height: 700px;
+        left: 44%;
+        top: 50.5%; } }
+
+.profile-card {
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  background: url(../images/bg-pattern-card.svg) no-repeat;
+  background-color: white;
+  background-size: auto 140px;
+  background-position: center top;
+  z-index: 1;
+  box-shadow: 5px 5px 10px rgba(150, 150, 150, 0.4); }
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: 5px solid white;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 87px auto 25px; }
+  .avatar img {
+    max-width: 100%; }
+
+.info .name,
+.stat .value {
+  color: #2d3248;
+  font-weight: 700; }
+
+.info .age,
+.addr,
+.stats .key {
+  color: #6a6f81;
+  font-weight: 400; }
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 12px; }
+  .info .name {
+    margin-right: 10px; }
+
+.addr {
+  font-size: 15px;
+  margin-bottom: 25px; }
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 29px 0 27px;
+  border-top: 1px solid #e7e7e7; }
+
+.stat .value {
+  margin-bottom: 7px; }
+.stat .key {
+  font-size: 11px; }
+
+/*# sourceMappingURL=style.css.map */
